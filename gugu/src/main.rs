@@ -2,7 +2,11 @@ fn main() {
     // 기본 출력 방식
     for i in 1..10 {
         for j in 1..10 {
-            print!("{:3},", i * j);
+            if j < 9 {
+                print!("{:3},", i * j);
+            } else {
+                print!("{:3}", i * j);
+            }
         }
 
         println!();
