@@ -1,15 +1,24 @@
 fn main() {
     // 기본 출력 방식
-    for i in 1..10 {
-        for j in 1..10 {
-            if j < 9 {
-                print!("{:3},", i * j);
-            } else {
-                print!("{:3}", i * j);
-            }
-        }
+    // for i in 1..10 {
+    //     for j in 1..10 {
+    //         if j < 9 {
+    //             print!("{:3},", i * j);
+    //         } else {
+    //             print!("{:3}", i * j);
+    //         }
+    //     }
+    //
+    //     println!();
+    // }
 
-        println!();
+    for i in 1..10 {
+        let s = (1..10)
+            .map(|x| format!("{:3}", i * x))
+            .collect::<Vec<String>>()
+            .join(",");
+
+        println!("{}", s);
     }
 
     // 단의 제목 출력 후 2 ~ 5단 출력
