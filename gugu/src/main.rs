@@ -12,8 +12,8 @@ fn main() {
     //     println!();
     // }
 
-    for i in 1..10 {
-        let s = (1..10)
+    for i in 1..=9 {
+        let s = (1..=9)
             .map(|x| format!("{:3}", i * x))
             .collect::<Vec<String>>()
             .join(",");
@@ -27,26 +27,26 @@ fn main() {
     // 2 x 9 = 18 ==> 총 10자리
 
     // 단 제목 출력
-    for title in 2..6 {
+    for title in 2..=5 {
         print_line(title);
     }
 
     println!();
 
-    for title in 2..6 {
+    for title in 2..=5 {
         print_title(title);
     }
 
     println!();
 
-    for title in 2..6 {
+    for title in 2..=5 {
         print_line(title);
     }
 
     println!();
 
-    for second in 1..10 {
-        for first in 2..6 {
+    for second in 1..=9 {
+        for first in 2..=5 {
             print_rule(first, second);
         }
 
@@ -55,26 +55,26 @@ fn main() {
 
     println!("\n");
 
-    for title in 6..10 {
+    for title in 6..=9 {
         print_line(title);
     }
 
     println!();
 
-    for title in 6..10 {
+    for title in 6..=9 {
         print_title(title);
     }
 
     println!();
 
-    for title in 6..10 {
+    for title in 6..=9 {
         print_line(title);
     }
 
     println!();
 
-    for second in 1..10 {
-        for first in 6..10 {
+    for second in 1..=9 {
+        for first in 6..=9 {
             print_rule(first, second);
         }
 

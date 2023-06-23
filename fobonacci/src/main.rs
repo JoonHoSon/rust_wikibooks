@@ -5,7 +5,7 @@ fn main() {
     println!("{}", a);
     println!("{}", b);
 
-    for _ in 0..30 {
+    for _ in 0..=29 {
         println!("{}", a + b);
 
         let temp = a;
