@@ -1,5 +1,5 @@
 fn main() {
-    let mut primes = [0; 100];
+    let mut primes: [usize; 100] = [0; 100];
 
     get_prime(&mut primes);
 
