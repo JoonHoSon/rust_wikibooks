@@ -10,6 +10,12 @@
 //! | 35 이상 | 3단계 비만(고도 비만) |
 //!
 
+const MESSAGE_HEIGHT: &str = "키(cm) : ";
+const MESSAGE_WEIGHT: &str = "몸무게(kg) : ";
+const ERROR_INPUT: &str = "입력 오류";
+const ERROR_STR: &str = "숫자형만 입력 하실 수 있습니다.";
+const ERROR_MINUS: &str = "0보다 큰 값을 입력하여 주십시오.";
+
 fn main() {
     let mut height: Result<f64, &str>;
     let mut weight: Result<f64, &str>;
@@ -17,7 +23,7 @@ fn main() {
         let height_value: f64;
         let weight_vallue: f64;
         let bmi: f64;
-        height = input("키(cm) : ");
+        height = input(MESSAGE_HEIGHT);
 
         match height {
             Ok(v) => height_value = v,
@@ -28,7 +34,7 @@ fn main() {
             }
         }
 
-        weight = input("몸무게(kg) : ");
+        weight = input(MESSAGE_WEIGHT);
 
         match weight {
             Ok(v) => weight_vallue = v,
@@ -63,7 +69,7 @@ fn main() {
     }
 }
 
-fn input(message: &str) -> Result<f64, &str> {
+fn input(message: &str) -> Result<f64, &'static str> {
     println!("{:?}", message);
 
     let mut s = String::new();
@@ -72,14 +78,14 @@ fn input(message: &str) -> Result<f64, &str> {
         Ok(_) => match s.trim().parse::<f64>() {
             Ok(v) => {
                 if v < 0.0 {
-                    Err("0보다 큰 숫자를 입력하여 주십시오.")
+                    Err(ERROR_MINUS)
                 } else {
                     Ok(v)
                 }
             }
-            Err(_) => Err("숫자형만 입력 가능합니다"),
+            Err(_) => Err(ERROR_STR),
         },
-        Err(_) => Err("입력 오류 발생"),
+        Err(_) => Err(ERROR_INPUT),
     }
 }
 
