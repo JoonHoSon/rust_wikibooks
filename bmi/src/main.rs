@@ -11,7 +11,8 @@
 //!
 
 use core::panic;
-use std::{num::ParseFloatError, string::ParseError};
+use std::num::ParseFloatError;
+
 fn main() {
     let height_cm = input("키(cm) : ");
     let weight = input("몸무게(kg) : ");
