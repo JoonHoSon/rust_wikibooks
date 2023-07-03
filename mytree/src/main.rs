@@ -1,4 +1,14 @@
-use std::{env, path, process::exit};
+use std::{
+    env,
+    fs::{Metadata, Permissions},
+    os::unix::prelude::PermissionsExt,
+    path,
+    process::exit,
+};
+
+extern crate colored;
+
+use colored::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -15,7 +25,7 @@ fn main() {
 }
 
 fn tree(target: &path::PathBuf, level: isize) {
-    let files = match target.read_dir() {
+    let files: std::fs::ReadDir = match target.read_dir() {
         Ok(v) => v,
         Err(e) => {
             println!("{:?}", e);
@@ -51,6 +61,20 @@ fn tree(target: &path::PathBuf, level: isize) {
             continue;
         }
 
-        println!("|---- {}", filename);
+        let metadata: Metadata = match path.metadata() {
+            Ok(v) => v,
+            Err(e) => {
+                println!("{:?}", e);
+                exit(1);
+            }
+        };
+        let permission: Permissions = metadata.permissions();
+        let executable: bool = permission.mode() & 0o111 != 0;
+
+        if executable {
+            println!("|---- {}", filename.cyan());
+        } else {
+            println!("|---- {}", filename);
+        }
     }
 }
