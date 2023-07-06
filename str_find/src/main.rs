@@ -12,4 +12,18 @@ fn main() {
         Some(i) => println!("바나나 = {}B", i),
         None => println!("'바나나'라는 단어는 없습니다."),
     };
+
+    let closure1: Option<usize> = s.find(|c: char| c == '귤');
+
+    match closure1 {
+        Some(i) => println!("[closure] 귤 = {}B", i),
+        None => println!("=[closure] '귤' 이라는 단어는 없습니다."),
+    }
+
+    let closure2: Option<usize> = s.find("겨울에");
+
+    match closure2 {
+        Some(i) => println!("[closure] 겨울에 = {}B", i),
+        None => println!("[closure] '겨울에'라는 단어는 없습니다"),
+    }
 }
