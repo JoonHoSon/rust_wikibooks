@@ -66,6 +66,22 @@ let telno3 = temp.split_off(8);
 let telno2 = temp.split_off(4);
 ```
 
+# unsafe
+
+`unsafe`로 정의된 함수는 해당 함수를 호출하는 쪽에도 동일하게 `unsafe` 블럭으로 감싸주어야 한다.
+
+```rust
+unsafe fn function() {
+	// ...
+}
+
+fn main() {
+	unsafe {
+		function();
+	}
+}
+```
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
