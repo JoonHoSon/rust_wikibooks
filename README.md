@@ -30,6 +30,41 @@
 | `\"` | 큰따옴표(`"`) 출력 | \"| | **"** ||
 | `\\` | 역슬래시(`\`) 출력 | \\ | | **\\** ||
 
+# 문자열 자르기
+**247page** 내용 정리
+
+<dl>
+	<dt>split_at</dt>
+	<dd>인자로 주어지는 position(index) - 1 위치를 기준으로 분리하여 <code>(&str, &str)</code> 형태로 반환</dd>
+	<dt>split_off</dt>
+	<dd>인자로 주어지는 position(index) - 1 위치를 기준으로 이후 문자열을(<code>String</code>) 반환</dd>
+</dl>
+
+```rust
+let telno = "032-123-4567";
+
+// -------------------------------
+// split_at(index + 1)
+// -------------------------------
+// 032-123-4567 => 032-124, -4567
+// ______^
+let (temp, telno3) = telno.split_at(7);
+
+// 032-123 => 032, -123
+// __^
+let (telno1, telno2) = temp.split_at(3);
+
+// -------------------------------
+// split_off(index + 1)
+// -------------------------------
+let mut temp = telno.to_string();
+// 032-123-4567 => 4567
+// _______^
+let telno3 = temp.split_off(8);
+// 032-123- => 123-
+// ___^
+let telno2 = temp.split_off(4);
+```
 
 # 확인 필요
 
