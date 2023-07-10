@@ -82,6 +82,51 @@ fn main() {
 }
 ```
 
+# 반복자 반환 함수 관련
+
+| 함수 | 설명 | 소유권 이동 |
+|---|---|---|
+| `iter` | 배열 혹은 벡터 요소의 참조자(`&T`)를 반환 | 소유권은 이동하지 않음 |
+| `iter_mut` | 배열 혹은 벡터 요소의 가변 참조자(`&mut T`)를 반환 | 소유권은 이동하지 않음 |
+| `into_iter` | 배열 혹은 벡터 요소의 값(`T`)을 반환 | **소유권 이동됨** |
+
+기본 타입(i32, f64, &str 등)이 아닌 타입에 `for`문 사용시 명시하지 않을 경우 암묵적으로 `into_iter()`가 자동으로 호출됨. 따라서 책의 설명과 같이 다음과 같이 `iter()`를 명시적으로 호출해야 함.
+
+```rust
+let arr1: [String; 4] = [
+    "Apple".to_string(),
+    "Banana".to_string(),
+    "Mango".to_string(),
+    "Tomato".to_string(),
+];
+let mut arr2: [String; 3] = [
+    "Apple".to_string(),
+    "Banana".to_string(),
+    "Mango".to_string(),
+];
+let arr3: [u8; 3] = [1, 2, 3];
+let arr4: [&str; 2] = ["Hello", "world"];
+
+// for a in arr {} 사용시 소유권 관련 오류 발생
+for a in arr1.iter() {
+    println!("{:?}", a);
+}
+
+for a in arr2.iter_mut() {
+    a.push_str(" universe");
+
+    println!("{}", a);
+}
+
+for a in arr3 {
+    println!("{:?}", a);
+}
+
+for a in arr4 {
+    println!("{:?}", a);
+}
+```
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
