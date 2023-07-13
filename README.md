@@ -127,6 +127,52 @@ for a in arr4 {
 }
 ```
 
+# Workspace
+
+다중 rust crate를 하나의 package로 묶고 전체를 일괄 빌드(테스트 등 포함) 할 수 있다.
+
+```
+|- api
+|  |-src
+|  |-Cargo.toml
+|
+|- application
+|  |-src
+|  |-Cargo.toml
+|
+|- domain
+|  |-src
+|  |-Cargo.toml
+|-Cargo.toml
+```
+
+하위 crate의 `Cargo.toml`은 일반적인 형식과 비슷하며, 상호 crate간 의존성이 있는 경우 다음과 같은 형태를 가진다.
+
+```toml
+# api/Cargo.toml
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+application = {path = "../application"}
+domain = {path = "../domain"}
+```
+
+최상위 `Cargo.toml`파일은 workspace section이 존재하며 다음의 형식을 가진다.
+
+```toml
+[workspace]
+members = [
+    "api",
+    "application",
+    "domain"
+]
+```
+
+`maven`의 sub module과 동일한 개념.
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
