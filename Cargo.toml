@@ -71,4 +71,5 @@ members = [
 	"rpn_calc",
 	"rpn_test",
 	"image_checkerboard",
+	"image_thumb",
 ]

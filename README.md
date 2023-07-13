@@ -177,6 +177,14 @@ members = [
 
 ![결과물](./md_img/checkerboard.png)
 
+# image resize by filter
+
+| filter | 결과물 | filter | 결과물 |
+|:---:|---|:---:|---|
+| `imageops::Nearest` | ![Nearest](./md_img/1c3c5631ed9772-thumb-nearest.png) | `imageops::Triangle` | ![Nearest](./md_img/1c3c5631ed9772-thumb-triangle.png) |
+| `imageops::CatmulRom` | ![Nearest](./md_img/1c3c5631ed9772-thumb-catmulrom.png) |`imageops::Gaussian` | ![Nearest](./md_img/1c3c5631ed9772-thumb-gaussian.png) |
+| `imageops::Lanczos3` | ![Nearest](./md_img/1c3c5631ed9772-thumb-lanczos3.png) | |
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
