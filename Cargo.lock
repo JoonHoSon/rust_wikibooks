@@ -401,8 +401,21 @@ name = "rec_fib"
 version = "0.1.0"
 
 [[package]]
-name = "rpn_calc"
+name = "rpn_calc_joonhoson"
+version = "0.0.1"
+
+[[package]]
+name = "rpn_calc_joonhoson"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1facc714f0d19178084ec95dee3074133207b5ff32d82a863a91421c11825f51"
+
+[[package]]
+name = "rpn_test"
 version = "0.1.0"
+dependencies = [
+ "rpn_calc_joonhoson 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "rustix"

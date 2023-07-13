@@ -69,4 +69,5 @@ members = [
 	"tuple_goods_struct",
 	"wallet",
 	"rpn_calc",
+	"rpn_test",
 ]
