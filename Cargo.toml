@@ -68,4 +68,5 @@ members = [
 	"trait_treasurebox",
 	"tuple_goods_struct",
 	"wallet",
+	"rpn_calc",
 ]
