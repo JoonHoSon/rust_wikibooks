@@ -70,4 +70,5 @@ members = [
 	"wallet",
 	"rpn_calc",
 	"rpn_test",
+	"image_checkerboard",
 ]
