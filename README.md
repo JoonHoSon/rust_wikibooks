@@ -4,6 +4,10 @@
 * **쿠지라 히코우즈쿠**에 지음
 * **양현** 옮김
 
+# cargo test시 `println!` 출력 방법
+
+`$ cargo test -- --nocapture`
+
 # println! macro format
 **205page** 내용 정리
 

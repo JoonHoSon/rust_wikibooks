@@ -75,4 +75,5 @@ members = [
     "image_filter",
     "sinewave",
     "sine_melody",
+    "mml",
 ]
