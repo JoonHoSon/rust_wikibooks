@@ -10,6 +10,6 @@ mod tests {
     #[test]
     fn calc_test2() {
         assert_eq!(2 * 3, 6);
-        assert_eq!(2 * 3, 7);
+        assert_ne!(2 * 3, 7);
     }
 }
