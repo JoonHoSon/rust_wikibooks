@@ -73,4 +73,5 @@ members = [
     "image_checkerboard",
     "image_thumb",
     "image_filter",
+    "sinewave",
 ]

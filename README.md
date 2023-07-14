@@ -185,6 +185,10 @@ members = [
 | `imageops::CatmulRom` | ![Nearest](./md_img/1c3c5631ed9772-thumb-catmulrom.png) |`imageops::Gaussian` | ![Nearest](./md_img/1c3c5631ed9772-thumb-gaussian.png) |
 | `imageops::Lanczos3` | ![Nearest](./md_img/1c3c5631ed9772-thumb-lanczos3.png) | |
 
+# image_filter(색상 반전)
+
+![결과물](./md_img/1c3c5631ed9772-out.jpg)
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
