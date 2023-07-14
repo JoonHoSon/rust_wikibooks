@@ -1,10 +1,11 @@
 // 문서용 설명 작성
 //! # RPN Calc
 //! Reverse Polish notation (RPN) Calc.
+//!
 //! # Example
 //! ```
 //! let source = "1 2 + 3 *".to_string();
-//! let a = rpn_calc::eval(source).unwrap();
+//! let a = rpn_calc_joonhoson::eval(source).unwrap();
 //! println!("{}", a); // 9
 //! ```
 pub fn eval(source: String) -> Result<f64, String> {
