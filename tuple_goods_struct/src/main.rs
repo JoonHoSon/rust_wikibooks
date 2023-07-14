@@ -5,7 +5,7 @@ fn main() {
     let apple: Item = Item("사과".to_string(), 200);
     let mango: Item = Item("망고".to_string(), 500);
     let items: Vec<Item> = vec![banana, apple, mango];
-    let total: i64= print_and_sum_items(&items);
+    let total: i64 = print_and_sum_items(&items);
 
     println!("합계는 {}원 입니다.", total);
 }

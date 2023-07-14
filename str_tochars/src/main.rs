@@ -1,5 +1,5 @@
 fn main() {
-    let pr: &str= "구슬이 서 말이라도 꿰어야 보배";
+    let pr: &str = "구슬이 서 말이라도 꿰어야 보배";
 
     for c in pr.chars() {
         print!("[{}]", c);

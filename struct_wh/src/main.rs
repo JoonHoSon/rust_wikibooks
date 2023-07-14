@@ -5,12 +5,12 @@ struct Body {
 
 fn main() {
     let hong = Body {
-        weight:80.0,
+        weight: 80.0,
         height: 165.0,
     };
     let lim = Body {
         weight: 65.0,
-        height: 170.0
+        height: 170.0,
     };
 
     println!("홍길동 = {:.1}", calc_bmi(&hong));
