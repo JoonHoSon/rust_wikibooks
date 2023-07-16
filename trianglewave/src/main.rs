@@ -3,7 +3,7 @@ extern crate hound;
 const SAMPLE_RATE: f32 = 44100.0;
 
 fn noteno_hz(no: i32) -> f32 {
-    return 440.0 * 2.0f32.powf(((no  - 69) as f32 / 12.0));
+    return 440.0 * 2.0f32.powf(((no - 69) as f32 / 12.0));
 }
 
 fn calc_len(bpm: usize, n: usize) -> usize {
@@ -20,11 +20,7 @@ fn tri_wave(noteno: i32, len: usize, gain: f32) -> Vec<f32> {
         let hi = i as f32 / half_fs;
         let mut v: f32 = 2.0 * (hi % 1.0) - 1.0;
         let is_climbing = hi.floor() as usize % 2 == 0;
-        v = if is_climbing {
-            v
-        } else {
-            -v
-        };
+        v = if is_climbing { v } else { -v };
         wav[i] = v;
     }
 
@@ -32,7 +28,7 @@ fn tri_wave(noteno: i32, len: usize, gain: f32) -> Vec<f32> {
 }
 
 fn main() {
-    let spec = hound::WavSpec{
+    let spec = hound::WavSpec {
         channels: 1,
         sample_rate: SAMPLE_RATE as u32,
         bits_per_sample: 32,
@@ -41,7 +37,18 @@ fn main() {
     let mut fw = hound::WavWriter::create("tri.wav", spec).unwrap();
     let mut wav: Vec<f32> = vec![];
     let bpm = 120;
-    [(60, 8), (64, 8), (67, 8), (64, 8), (60, 8), (64, 8), (67, 8), (72, 8)].iter().for_each(|no| {
+    [
+        (60, 8),
+        (64, 8),
+        (67, 8),
+        (64, 8),
+        (60, 8),
+        (64, 8),
+        (67, 8),
+        (72, 8),
+    ]
+    .iter()
+    .for_each(|no| {
         wav.extend(tri_wave(no.0, calc_len(bpm, no.1), 0.5));
     });
 
@@ -75,7 +82,9 @@ fn main() {
         (62, 4),
         (62, 4),
         (60, 2),
-    ].iter().for_each(|no| {
+    ]
+    .iter()
+    .for_each(|no| {
         wav.extend(tri_wave(no.0, calc_len(bpm, no.1), 0.5));
     });
 
