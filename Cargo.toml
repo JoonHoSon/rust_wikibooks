@@ -79,4 +79,5 @@ members = [
     "sawwave",
     "squarewave",
     "trianglewave",
+    "pulsewave",
 ]
