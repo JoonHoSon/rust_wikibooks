@@ -1113,6 +1113,13 @@ name = "trait_treasurebox"
 version = "0.1.0"
 
 [[package]]
+name = "trianglewave"
+version = "0.1.0"
+dependencies = [
+ "hound",
+]
+
+[[package]]
 name = "tuple_goods_struct"
 version = "0.1.0"
 
