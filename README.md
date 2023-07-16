@@ -203,7 +203,7 @@ members = [
 <audio src="./md_img/same_tri.wav" controls loop="false" preload="auto" />
 * 펄스파<br>
     * duty 0.1<br>
-    <audio src="./md_img/pulse_same_0.1.wav" controls loop="false" preload="auto" />
+    <audio src="./md_img/pulse_same_0.1.wav?raw=true" controls loop="false" preload="auto" />
     * duty 0.3<br>
     <audio src="./md_img/pulse_same_0.3.wav" controls loop="false" preload="auto" />
     * duty 0.5<br>
