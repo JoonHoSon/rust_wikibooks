@@ -77,4 +77,5 @@ members = [
     "sine_melody",
     "mml",
     "sawwave",
+    "squarewave",
 ]

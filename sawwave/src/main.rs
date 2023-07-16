@@ -135,5 +135,4 @@ fn main() {
     for v in wav.iter() {
         fw.write_sample(*v).unwrap();
     }
-
 }

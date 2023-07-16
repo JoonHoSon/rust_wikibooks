@@ -1009,6 +1009,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "squarewave"
+version = "0.1.0"
+dependencies = [
+ "hound",
+]
+
+[[package]]
 name = "str_find"
 version = "0.1.0"
 
