@@ -193,6 +193,24 @@ members = [
 
 ![결과물](./md_img/1c3c5631ed9772-out.jpg)
 
+# 80년대 음원 만들기(동요 `똑같아요` 추가)
+
+* 톱니파<br>
+<audio src="./md_img/same_saw.wav" controls loop="false" preload="auto" />
+* 방형파<br>
+<audio src="./md_img/same_square.wav" controls loop="false" preload="auto" />
+* 삼각파<br>
+<audio src="./md_img/same_tri.wav" controls loop="false" preload="auto" />
+* 펄스파<br>
+    * duty 0.1<br>
+    <audio src="./md_img/pulse_same_0.1.wav" controls loop="false" preload="auto" />
+    * duty 0.3<br>
+    <audio src="./md_img/pulse_same_0.3.wav" controls loop="false" preload="auto" />
+    * duty 0.5<br>
+    <audio src="./md_img/pulse_same_0.5.wav" controls loop="false" preload="auto" />
+    * duty 0.7<br>
+    <audio src="./md_img/pulse_same_0.7.wav" controls loop="false" preload="auto" />
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
