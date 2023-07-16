@@ -7,3 +7,4 @@ sawwave/*.wav
 squarewave/*.wav
 trianglewave/*.wav
 pulsewave/*.wav
+fm_synth/*.wav

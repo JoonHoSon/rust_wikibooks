@@ -80,4 +80,5 @@ members = [
     "squarewave",
     "trianglewave",
     "pulsewave",
+    "fm_synth",
 ]

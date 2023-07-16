@@ -342,6 +342,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "fm_synth"
+version = "0.1.0"
+dependencies = [
+ "hound",
+]
+
+[[package]]
 name = "fobonacci"
 version = "0.1.0"
 
