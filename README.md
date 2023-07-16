@@ -196,20 +196,29 @@ members = [
 # 80년대 음원 만들기(동요 `똑같아요` 추가)
 
 * 톱니파<br>
-<audio src="./md_img/same_saw.wav" controls loop="false" preload="auto" />
+<audio src="./md_img/same_saw.wav?raw=true" controls loop="false" preload="auto" />
 * 방형파<br>
-<audio src="./md_img/same_square.wav" controls loop="false" preload="auto" />
+<audio src="./md_img/same_square.wav?raw=true" controls loop="false" preload="auto" />
 * 삼각파<br>
-<audio src="./md_img/same_tri.wav" controls loop="false" preload="auto" />
+<audio src="./md_img/same_tri.wav?raw=true" controls loop="false" preload="auto" />
 * 펄스파<br>
     * duty 0.1<br>
     <audio src="./md_img/pulse_same_0.1.wav?raw=true" controls loop="false" preload="auto" />
     * duty 0.3<br>
-    <audio src="./md_img/pulse_same_0.3.wav" controls loop="false" preload="auto" />
+    <audio src="./md_img/pulse_same_0.3.wav?raw=true" controls loop="false" preload="auto" />
     * duty 0.5<br>
-    <audio src="./md_img/pulse_same_0.5.wav" controls loop="false" preload="auto" />
+    <audio src="./md_img/pulse_same_0.5.wav?raw=true" controls loop="false" preload="auto" />
     * duty 0.7<br>
-    <audio src="./md_img/pulse_same_0.7.wav" controls loop="false" preload="auto" />
+    <audio src="./md_img/pulse_same_0.7.wav?raw=true" controls loop="false" preload="auto" />
+* FM 음원<br>
+    * 매개변수 4.5, 2.0<br>
+    <audio src="./md_img/fm_4.5_2.0.wav?raw=true" controls loop="false" preload="auto" />
+    * 매개변수 7.0, 3.0<br>
+    <audio src="./md_img/fm_7.0_3.0.wav?raw=true" controls loop="false" preload="auto" />
+    * 매개변수 3.0, 2.0<br>
+    <audio src="./md_img/fm_3.0_2.0.wav?raw=true" controls loop="false" preload="auto" />
+    * 매개변수 11.0, 4.0<br>
+    <audio src="./md_img/fm_11.0_4.0.wav?raw=true" controls loop="false" preload="auto" />
 
 # 확인 필요
 
