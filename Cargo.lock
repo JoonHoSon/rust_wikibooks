@@ -95,6 +95,10 @@ name = "caesar_enc2"
 version = "0.1.0"
 
 [[package]]
+name = "calc_multi"
+version = "0.1.0"
+
+[[package]]
 name = "calc_price"
 version = "0.1.0"
 

@@ -84,4 +84,5 @@ members = [
     "threadtest",
     "mpsctest",
     "calc_single",
+    "calc_multi",
 ]
