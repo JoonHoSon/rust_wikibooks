@@ -99,6 +99,10 @@ name = "calc_price"
 version = "0.1.0"
 
 [[package]]
+name = "calc_single"
+version = "0.1.0"
+
+[[package]]
 name = "cc"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
