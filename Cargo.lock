@@ -648,6 +648,10 @@ name = "mod_random"
 version = "0.1.0"
 
 [[package]]
+name = "mpsctest"
+version = "0.1.0"
+
+[[package]]
 name = "mutarg"
 version = "0.1.0"
 
@@ -1099,6 +1103,10 @@ dependencies = [
  "quote",
  "unicode-ident",
 ]
+
+[[package]]
+name = "threadtest"
+version = "0.1.0"
 
 [[package]]
 name = "tiff"

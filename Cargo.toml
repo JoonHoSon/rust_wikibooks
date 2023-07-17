@@ -81,4 +81,6 @@ members = [
     "trianglewave",
     "pulsewave",
     "fm_synth",
+    "threadtest",
+    "mpsctest",
 ]
