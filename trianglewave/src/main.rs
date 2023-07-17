@@ -3,7 +3,7 @@ extern crate hound;
 const SAMPLE_RATE: f32 = 44100.0;
 
 fn noteno_hz(no: i32) -> f32 {
-    return 440.0 * 2.0f32.powf(((no - 69) as f32 / 12.0));
+    return 440.0 * 2.0f32.powf((no - 69) as f32 / 12.0);
 }
 
 fn calc_len(bpm: usize, n: usize) -> usize {
