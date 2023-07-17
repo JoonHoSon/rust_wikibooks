@@ -85,4 +85,6 @@ members = [
     "mpsctest",
     "calc_single",
     "calc_multi",
+    "chat_server",
+    "chat_client",
 ]

@@ -224,3 +224,44 @@ members = [
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
 ![미로 갈무리 화면](./md_img/chapt2_maze_00001.png)
+
+## 간이 채팅 프로그램 만들기
+
+* 408 ~ 409 page 소스 중 `send_all` 함수를 다음과 같이 구현 해도 정상 작동함(소유권 이전하지 않음)<br>
+
+```rust
+use std::net::TcpStream;
+
+// --------------------------------------------------------
+// 책의 예제
+// --------------------------------------------------------
+fn send_all(clients: Vec<TcpStream>, s: &str) -> Vec<TcpStream> {
+    let mut collector = vec![];
+    for mut socket in clients.into_iter() {
+        // 문자열을 바이트열로 변환해 전송
+        let bytes = String::from(s).into_bytes();
+        if let Err(e) = socket.write_all(&bytes) {
+            println!("전송 에러 : {}", e);
+            continue;
+        }
+        collector.push(socket); // 소유권 회수
+    }
+    collector // 소유권 반환
+}
+```
+```rust
+// --------------------------------------------------------
+// 수정
+// --------------------------------------------------------
+fn send_all(clients: &Vec<TcpStream>, msg: &str) {
+    for mut socket in clients.iter() {
+        let bytes = String::from(msg).into_bytes();
+
+        if let Err(e) = socket.write_all(&bytes) {
+            println!("전송 에러 : {:?}", e);
+
+            continue;
+        }
+    }
+}
+```
