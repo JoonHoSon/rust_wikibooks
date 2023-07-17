@@ -195,6 +195,8 @@ members = [
 
 # 80년대 음원 만들기(동요 `똑같아요` 추가)
 
+![건반 노트 번호](./md_img/piano_keyboard.jpg)
+
 * 톱니파<br>
 <audio src="./md_img/same_saw.wav?raw=true" controls loop="false" preload="auto" />
 * 방형파<br>
