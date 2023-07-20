@@ -2,7 +2,7 @@ extern crate actix_web;
 extern crate lazy_static;
 extern crate tera;
 
-use actix_web::{App, get, HttpRequest, HttpResponse, HttpServer, post, Responder, web};
+use actix_web::{get, post, web, App, HttpRequest, HttpResponse, HttpServer, Responder};
 use lazy_static::lazy_static;
 use serde::Deserialize;
 use tera::{Context, Tera};
