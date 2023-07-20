@@ -87,4 +87,5 @@ members = [
     "calc_multi",
     "chat_server",
     "chat_client",
+    "web_bmi",
 ]

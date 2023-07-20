@@ -1,0 +1,15 @@
+{% extends "layout/default.html" %}
+
+{% block content %}
+<form action="calc" method="post">
+    <div>
+        <label for="height">키 : </label>
+        <input type="text" name="height" id="height" placeholder="cm 단위"/>
+    </div>
+    <div>
+        <label for="weight">몸무게 :</label>
+        <input type="text" name="weight" id="weight" placeholder="Kg 단위"/>
+    </div>
+    <div><label><input type="submit"/></label></div>
+</form>
+{% endblock content %}
