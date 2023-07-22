@@ -1287,6 +1287,10 @@ name = "macro_hashmap"
 version = "0.1.0"
 
 [[package]]
+name = "macro_html"
+version = "0.1.0"
+
+[[package]]
 name = "match_bmi"
 version = "0.1.0"
 

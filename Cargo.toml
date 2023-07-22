@@ -93,4 +93,5 @@ members = [
     "macro_for",
     "macro_hashmap",
     "macro_bmi",
+    "macro_html",
 ]
