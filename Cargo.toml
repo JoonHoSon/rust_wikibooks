@@ -97,4 +97,5 @@ members = [
     "list_fix",
     "list_enum",
     "slist",
+    "rc_test_fix",
 ]
