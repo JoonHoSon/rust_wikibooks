@@ -96,4 +96,5 @@ members = [
     "macro_html",
     "list_fix",
     "list_enum",
+    "slist",
 ]
