@@ -99,4 +99,5 @@ members = [
     "slist",
     "rc_test_fix",
     "rc_mod_fix",
+    "dlist",
 ]
