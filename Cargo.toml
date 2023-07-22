@@ -92,4 +92,5 @@ members = [
     "macro_echo_nums",
     "macro_for",
     "macro_hashmap",
+    "macro_bmi",
 ]
