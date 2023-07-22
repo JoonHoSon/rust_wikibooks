@@ -58,8 +58,8 @@ impl List {
 
                     match p.link {
                         None => None,
-                        Some(ref link) => p = link,
-                    }
+                        Some(ref link) => Some(p = link),
+                    };
 
                     i += 1;
                 }
