@@ -88,4 +88,8 @@ members = [
     "chat_server",
     "chat_client",
     "web_bmi",
+    "macro_echo_num",
+    "macro_echo_nums",
+    "macro_for",
+    "macro_hashmap",
 ]
