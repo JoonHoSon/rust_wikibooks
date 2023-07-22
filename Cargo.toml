@@ -94,4 +94,5 @@ members = [
     "macro_hashmap",
     "macro_bmi",
     "macro_html",
+    "list_fix",
 ]
