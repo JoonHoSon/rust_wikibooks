@@ -102,4 +102,5 @@ members = [
     "dlist",
     "peg_plus",
     "peg_calc",
+    "peg_tomato",
 ]
