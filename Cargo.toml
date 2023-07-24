@@ -100,4 +100,5 @@ members = [
     "rc_test_fix",
     "rc_mod_fix",
     "dlist",
+    "peg_plus",
 ]
