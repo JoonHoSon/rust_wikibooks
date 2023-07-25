@@ -759,6 +759,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "ffi_mul"
+version = "0.1.0"
+dependencies = [
+ "cc",
+ "libc",
+]
+
+[[package]]
 name = "findfile"
 version = "0.1.0"
 
