@@ -14,7 +14,7 @@ else:
     libfile = 'libmycalc_python.so'
 
 # 경로 지정
-libpath = os.path.join(pathlib.Path(os.path.abspath('.')).parent.absolute(), 'target', 'debug', 'lib{}'.format(libfile))
+libpath = os.path.join(pathlib.Path(os.path.abspath('.')).parent.absolute(), 'target', 'debug', libfile)
 
 print('libpath : {}'.format(libpath))
 
