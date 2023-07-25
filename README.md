@@ -7,6 +7,8 @@
 # TODO
 
 * [ ] pg_tomato 개선(`test_multi_line.tomato` 동작 안함)
+* [ ] mycalc_python 윈도우에서 동작 안함<br>
+`OSError: [WinError 193] %1은(는) 올바른 Win32 응용 프로그램이 아닙니다`
 
 # cargo test시 `println!` 출력 방법
 
