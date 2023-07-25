@@ -235,6 +235,8 @@ members = [
 | `RefCell<T>` | X | O | 실행할 때 빌림 규칙을 강제<br>`Mutex<T>`는 thread-safe                     |
 | `Rc<RefCell<T>>` | O | O | 힙 영역에 공유 가능하고 수정 가능한 T의 메모리 확보<br>`Arc<Mutex<T>>`는 thread-safe |
 
+---
+
 # 확인 필요
 
 * [ ] Chapter 2의 미로 생성(110 페이지)에서 생성된 미로는 진입할 수 없는 문제가 있음<br>
