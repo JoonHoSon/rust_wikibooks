@@ -9,9 +9,9 @@ pf = platform.system().lower()
 if 'windows' == pf:
     libfile = 'mycalc_python.dll'
 elif 'darwin' == pf:
-    libfile = 'mycalc_python.dylib'
+    libfile = 'libmycalc_python.dylib'
 else:
-    libfile = 'mycalc_python.so'
+    libfile = 'libmycalc_python.so'
 
 # 경로 지정
 libpath = os.path.join(pathlib.Path(os.path.abspath('.')).parent.absolute(), 'target', 'debug', 'lib{}'.format(libfile))
