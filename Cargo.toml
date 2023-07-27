@@ -107,4 +107,5 @@ members = [
     "mycalc_python",
     "wasm_hello",
     "wasm_tomato",
+    "async_longtime",
 ]
