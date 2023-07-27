@@ -105,4 +105,6 @@ members = [
     "peg_tomato",
     "ffi_mul",
     "mycalc_python",
+
+    "wasm_hello",
 ]

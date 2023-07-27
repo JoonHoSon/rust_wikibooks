@@ -8,3 +8,4 @@ squarewave/*.wav
 trianglewave/*.wav
 pulsewave/*.wav
 fm_synth/*.wav
+wasm_hello/pkg

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WASM test</title>
+</head>
+<body>
+<h1>index.html</h1>
+<h2 id="info"></h2>
+
+<script type="module">
+    import init, {hello, rust_mul} from './pkg/wasm_hello.js';
+
+    init().then(() => {
+        setTimeout(() => {
+            hello('Rust');
+        }, 200);
+
+        const a = rust_mul(2000, 3);
+        document.getElementById('info').innerHTML = a;
+    });
+</script>
+</body>
+</html>
