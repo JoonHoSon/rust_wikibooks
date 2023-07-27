@@ -1578,12 +1578,33 @@ checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
 
 [[package]]
 name = "peg"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "07c0b841ea54f523f7aa556956fbd293bcbe06f2e67d2eb732b7278aaf1d166a"
+dependencies = [
+ "peg-macros 0.7.0",
+ "peg-runtime 0.7.0",
+]
+
+[[package]]
+name = "peg"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a07f2cafdc3babeebc087e499118343442b742cc7c31b4d054682cc598508554"
 dependencies = [
- "peg-macros",
- "peg-runtime",
+ "peg-macros 0.8.1",
+ "peg-runtime 0.8.1",
+]
+
+[[package]]
+name = "peg-macros"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b5aa52829b8decbef693af90202711348ab001456803ba2a98eb4ec8fb70844c"
+dependencies = [
+ "peg-runtime 0.7.0",
+ "proc-macro2",
+ "quote",
 ]
 
 [[package]]
@@ -1592,10 +1613,16 @@ version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4a90084dc05cf0428428e3d12399f39faad19b0909f64fb9170c9fdd6d9cd49b"
 dependencies = [
- "peg-runtime",
+ "peg-runtime 0.8.1",
  "proc-macro2",
  "quote",
 ]
+
+[[package]]
+name = "peg-runtime"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c719dcf55f09a3a7e764c6649ab594c18a177e3599c467983cdf644bfc0a4088"
 
 [[package]]
 name = "peg-runtime"
@@ -1607,21 +1634,21 @@ checksum = "9fa00462b37ead6d11a82c9d568b26682d78e0477dc02d1966c013af80969739"
 name = "peg_calc"
 version = "0.1.0"
 dependencies = [
- "peg",
+ "peg 0.8.1",
 ]
 
 [[package]]
 name = "peg_plus"
 version = "0.1.0"
 dependencies = [
- "peg",
+ "peg 0.8.1",
 ]
 
 [[package]]
 name = "peg_tomato"
 version = "0.1.0"
 dependencies = [
- "peg",
+ "peg 0.8.1",
 ]
 
 [[package]]
@@ -2645,6 +2672,14 @@ checksum = "ca6ad05a4870b2bf5fe995117d3728437bd27d7cd5f06f13c17443ef369775a1"
 name = "wasm_hello"
 version = "0.1.0"
 dependencies = [
+ "wasm-bindgen",
+]
+
+[[package]]
+name = "wasm_tomato"
+version = "0.1.0"
+dependencies = [
+ "peg 0.7.0",
  "wasm-bindgen",
 ]
 

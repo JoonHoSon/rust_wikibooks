@@ -9,3 +9,4 @@ trianglewave/*.wav
 pulsewave/*.wav
 fm_synth/*.wav
 wasm_hello/pkg
+wasm_tomato/pkg
