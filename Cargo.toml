@@ -108,4 +108,5 @@ members = [
     "wasm_hello",
     "wasm_tomato",
     "async_longtime",
+    "async_spawn",
 ]
